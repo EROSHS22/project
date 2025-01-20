@@ -135,71 +135,80 @@ function App() {
       </div>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen relative flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-black/70 z-10" />
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
+<section id="home" className="min-h-screen relative flex items-center justify-center overflow-hidden">
+  <div className="absolute inset-0 z-0">
+    <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-black/70 z-10" />
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="w-full h-full object-cover"
+    >
+      <source src="https://player.vimeo.com/external/451837014.sd.mp4?s=7a7e37b5b7f5dc0e0ea5f3659c57c5c4f8c72e0d&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
+    </video>
+  </div>
+
+  <div className="container mx-auto px-4 z-20 pt-20">
+    <div className="max-w-5xl mx-auto">
+      <div className="overflow-hidden mb-8 flex items-center gap-8">
+        {/* Texto */}
+        <div>
+          <h1 className="text-[12vw] md:text-[8vw] font-serif font-bold leading-none animate-text-reveal">
+            <span className="text-gradient-white">AJ&S</span>
+            <br />
+            <span className="text-gradient">Notary</span>
+          </h1>
+        </div>
+        {/* Imagen al lado */}
+        <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden">
+          <img
+            src="/img/6.png "
+            alt="AJ&S Logo"
             className="w-full h-full object-cover"
-          >
-            <source src="https://player.vimeo.com/external/451837014.sd.mp4?s=7a7e37b5b7f5dc0e0ea5f3659c57c5c4f8c72e0d&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
-          </video>
+          />
         </div>
+      </div>
 
-        <div className="container mx-auto px-4 z-20 pt-20">
-          <div className="max-w-5xl mx-auto">
-            <div className="overflow-hidden mb-4">
-            </div>
-            
-            <div className="overflow-hidden mb-8">
-              <h1 className="text-[12vw] md:text-[8vw] font-serif font-bold leading-none animate-text-reveal">
-                <span className="text-gradient-white">AJ&S</span>
-                <br />
-                <span className="text-gradient">Notary</span>
-              </h1>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-16 mt-16">
-              <div className="space-y-8 animate-reveal" style={{ animationDelay: '0.2s' }}>
-                <p className="text-xl text-gray-300">
-                  Professional notarization and LiveScan services available 7 days a week. 
-                  We bring our expertise directly to you with our mobile service.
-                </p>
-                
-                <div className="flex gap-6">
-                  <a
-                    href="#contact"
-                    className="group bg-gradient-to-r from-amber-400 to-amber-600 text-black px-8 py-4 rounded-full hover:from-amber-300 hover:to-amber-500 transition-all duration-300 font-semibold flex items-center gap-2"
-                  >
-                    Schedule Now
-                    <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="relative animate-reveal" style={{ animationDelay: '0.4s' }}>
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-400/20 to-amber-600/20 rounded-2xl transform rotate-3" />
-                <img
-                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80"
-                  alt="Professional workspace"
-                  className="rounded-2xl relative z-10 transform -rotate-3 hover:rotate-0 transition-all duration-500 object-cover"
-                />
-              </div>
-            </div>
+      <div className="grid md:grid-cols-2 gap-16 mt-16">
+        <div className="space-y-8 animate-reveal" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl text-gray-300">
+            Professional notarization and LiveScan services available 7 days a week. 
+            We bring our expertise directly to you with our mobile service.
+          </p>
+          
+          <div className="flex gap-6">
+            <a
+              href="#contact"
+              className="group bg-gradient-to-r from-amber-400 to-amber-600 text-black px-8 py-4 rounded-full hover:from-amber-300 hover:to-amber-500 transition-all duration-300 font-semibold flex items-center gap-2"
+            >
+              Schedule Now
+              <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 overflow-hidden py-12">
-          <div className="animate-marquee whitespace-nowrap flex gap-8">
-            {Array(10).fill('Available 24/7 • Mobile Service • Licensed & Bonded • ').map((text, i) => (
-              <span key={i} className="text-2xl font-serif opacity-20">{text}</span>
-            ))}
-          </div>
+        <div className="relative animate-reveal" style={{ animationDelay: '0.4s' }}>
+          <div className="absolute inset-0 bg-gradient-to-r from-amber-400/20 to-amber-600/20 rounded-2xl transform rotate-3" />
+          <img
+            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80"
+            alt="Professional workspace"
+            className="rounded-2xl relative z-10 transform -rotate-3 hover:rotate-0 transition-all duration-500 object-cover"
+          />
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+
+  <div className="absolute bottom-0 left-0 right-0 overflow-hidden py-12">
+    <div className="animate-marquee whitespace-nowrap flex gap-8">
+      {Array(10).fill('Available 24/7 • Mobile Service • Licensed & Bonded • ').map((text, i) => (
+        <span key={i} className="text-2xl font-serif opacity-20">{text}</span>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Services Section */}
       <section id="services" className="py-32 relative">
