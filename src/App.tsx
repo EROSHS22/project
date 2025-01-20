@@ -216,7 +216,7 @@ function App() {
             <div className="service-card p-8 rounded-2xl animate-reveal">
               <div className="mb-6">
                 <img
-                  src="/img/2.jpg"
+                  src="/src/img/2.jpg"
                   alt="Notary services"
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
@@ -240,7 +240,7 @@ function App() {
             <div className="service-card p-8 rounded-2xl animate-reveal" style={{ animationDelay: '200ms' }}>
               <div className="mb-6">
                 <img
-                  src="/img/3.jpg"
+                  src="/src/img/3.jpg"
                   alt="LiveScan services"
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
@@ -264,7 +264,7 @@ function App() {
             <div className="service-card p-8 rounded-2xl animate-reveal" style={{ animationDelay: '400ms' }}>
               <div className="mb-6">
                 <img
-                  src="/img/4.jpg"
+                  src="/src/img/4.jpg"
                   alt="Forms assistance"
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
@@ -305,7 +305,7 @@ function App() {
         <div className="space-y-8 animate-reveal text-center">
           <div className="mb-8">
             <img
-              src="/img/5.jpg"
+              src="/src/img/5.jpg"
               alt="Professional profile"
               className="w-64 h-64 rounded-full mx-auto object-cover border-4 border-amber-400"
             />
