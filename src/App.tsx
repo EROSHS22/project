@@ -240,7 +240,7 @@ function App() {
             <div className="service-card p-8 rounded-2xl animate-reveal" style={{ animationDelay: '200ms' }}>
               <div className="mb-6">
                 <img
-                  src="img/3.jpg"
+                  src="src/img/3.jpg"
                   alt="LiveScan services"
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
