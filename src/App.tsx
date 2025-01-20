@@ -374,9 +374,8 @@ function App() {
                   />
                   <ContactItem
                     icon={MapPin}
-                    text="Mobile Service Available"
-                  />
-
+                    text="Mobile service available in Kings County and surrounding areas"
+                    />
 
                 </div>
               </div>
