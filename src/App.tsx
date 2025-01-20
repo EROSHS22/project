@@ -305,7 +305,7 @@ function App() {
         <div className="space-y-8 animate-reveal text-center">
           <div className="mb-8">
             <img
-              src="/src/img/5.jpg"
+              src="/img/5.jpg"
               alt="Professional profile"
               className="w-64 h-64 rounded-full mx-auto object-cover border-4 border-amber-400"
             />
