@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ScrollText, Fingerprint, Clock, MapPin, Phone, Mail, ChevronDown, ArrowRight, Shield, Award, Star, X } from 'lucide-react';
 import { Analytics } from '@vercel/analytics/react';
+import { Helmet } from "react-helmet";
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
